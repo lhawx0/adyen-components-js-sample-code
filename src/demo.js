@@ -7,6 +7,7 @@ function updateStateContainer(newState) {
     stateContainer.innerText = JSON.stringify(newState, null, 2);
 }
 
+
 // Demo - Update request container
 function updateRequestContainer(response) {
     const defaultResponseParams = { merchantAccount: 'YOUR_MERCHANT_ACCOUNT' };

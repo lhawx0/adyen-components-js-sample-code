@@ -1,16 +1,18 @@
 // Function to set returnUrl, for standard Drop-in and Components, return to placeholder,
 // else redirect back to sessions where we handle the redirectResult
+
+
 function setReturnUrl(){
     if(window.location.pathname === '/sessions/') {
         return window.location.href
     } else {
-        return 'https://your-company.com/'
+        return 'https://docs.adyen.com/'
     }
 }
 
 const paymentMethodsConfig = {
     shopperReference: 'Checkout Components sample code test',
-    reference: 'Checkout Components sample code test',
+    reference: 'HaoHuang_adyenrecruitment',
     countryCode: 'NL',
     amount: {
         value: 1000,
@@ -20,7 +22,7 @@ const paymentMethodsConfig = {
 
 const paymentsDefaultConfig = {
     shopperReference: 'Checkout Components sample code test',
-    reference: 'Checkout Components sample code test',
+    reference: 'HaoHuang_adyenrecruitment',
     countryCode: 'NL',
     channel: 'Web',
     returnUrl: setReturnUrl(),
